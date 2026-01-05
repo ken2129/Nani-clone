@@ -1,0 +1,24 @@
+name: 機能リクエスト
+description: 新しい機能の提案
+title: "[FEAT] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: 提案する機能の概要
+      description: どのような機能を追加したいですか？
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: 提案の理由
+      description: なぜその機能が必要ですか？解決したい課題は何ですか？
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 具体的なイメージ
+      description: デザインや動作に関する具体的なイメージがあれば記入してください。
