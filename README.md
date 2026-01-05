@@ -30,6 +30,7 @@ Gemini API を利用した、シンプルでセキュアなリアルタイム翻
 
 本プロジェクトの開発運用（Git 運用、Issue フロー、AI エージェントの動作ルール等）については、以下を参照してください。
 
+- [核心的動作原理 (SSoT)](.agent/rules/ssot.md)
 - [開発運用ルール](.agent/rules/development-guide.md)
 
 ## 5. ドキュメント
