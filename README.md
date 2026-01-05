@@ -32,7 +32,6 @@ Gemini API を利用した、シンプルでセキュアなリアルタイム翻
 
 - [核心的動作原理 (SSoT)](.agent/rules/ssot.md)
 - [開発運用ルール](.agent/rules/development-guide.md)
-- [GitHub CLI 運用ルール](.agent/rules/github-cli.md) (AI 用)
 
 ## 5. ドキュメント
 
