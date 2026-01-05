@@ -28,10 +28,11 @@ Gemini API を利用した、シンプルでセキュアなリアルタイム翻
 
 ## 4. 開発ガイドライン
 
-本プロジェクトの開発運用（Git 運用、Issue フロー、AI エージェントの動作ルール等）については、以下を参照してください。
+本プロジェクトの開発・運用ルールについては、AI エージェントおよび開発者共通の規約として以下にまとめています。
 
 - [核心的動作原理 (SSoT)](.agent/rules/ssot.md)
 - [開発運用ルール](.agent/rules/development-guide.md)
+- [GitHub CLI 運用ルール](.agent/rules/github-cli.md) (AI 用)
 
 ## 5. ドキュメント
 
