@@ -1,0 +1,24 @@
+name: タスク
+description: その他の汎用的な作業や調査
+title: "[TASK] "
+labels: []
+body:
+  - type: textarea
+    id: content
+    attributes:
+      label: 作業内容
+      description: 何を行うタスクですか？
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: 完了条件
+      description: 何をもって完了としますか？
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: 備考
+      description: その他、補足情報があれば記入してください。

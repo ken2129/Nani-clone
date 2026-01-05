@@ -1,0 +1,26 @@
+name: リファクタリング
+description: 機能変更を伴わないコードの改善
+title: "[REFACTOR] "
+labels: ["refactor"]
+body:
+  - type: textarea
+    id: target
+    attributes:
+      label: リファクタリングの対象
+      description: どのファイルや関数が対象ですか？
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 現在の問題点
+      description: 現状のコードのどこに改善の余地がありますか？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 改善案
+      description: どのように改善することを提案しますか？
+    validations:
+      required: true
