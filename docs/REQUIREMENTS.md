@@ -20,6 +20,7 @@ Gemini API を利用したリアルタイム翻訳ツールです。
 - **ユーティリティ**:
   - 翻訳結果のワンクリックコピー機能。
   - 入力文字数のリアルタイムカウント表示（上限: 5,000 文字）。
+    l
 
 ---
 
@@ -32,19 +33,10 @@ Gemini API を利用したリアルタイム翻訳ツールです。
 
 ---
 
-## 4. 技術構成 & セキュリティ
-
-### 技術スタック
-
-- **Framework**: Next.js (App Router), React, TypeScript
-- **Styling**: Vanilla CSS (Rich UI), Lucide Icons
-- **Backend**: Next.js API Routes (API Proxy)
-- **Infrastructure**: Vercel
-
-### セキュリティ・通信方針
+## 4. セキュリティ方針
 
 - **API キーの保護**: API キーはブラウザの `httpOnly Cookie` にのみ保持され、サーバー側のデータベース等には永続保存しません。
-- **プロキシ中継**: 翻訳リクエスト時に Cookie から API キーを読み取り、バックエンド（API Routes）経由で Google Gemini API を呼び出します。フロントエンドの JavaScript にキーが露出することはありません。
+- **プロキシ中継**: 翻訳リクエスト時に Cookie から API キーを読み取り、バックエンド経由で Google Gemini API を呼び出します。フロントエンドの JavaScript にキーが露出することはありません。
 
 ---
 
