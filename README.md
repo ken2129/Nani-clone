@@ -24,14 +24,11 @@ Gemini API を利用した、シンプルでセキュアなリアルタイム翻
 - `src/app/`: Next.js App Router ページとレイアウト
 - `src/components/`: 再利用可能な UI コンポーネント
 - `docs/`: 要件定義、デザイン仕様などの設計書
-- `.agent/rules/`: AI エージェント（Antigravity）向けの動作ルール
+- `CLAUDE.md`: Claude Code の運用ルール
 
 ## 4. 開発ガイドライン
 
-本プロジェクトの開発・運用ルールについては、AI エージェントおよび開発者共通の規約として以下にまとめています。
-
-- [核心的動作原理 (SSoT)](.agent/rules/ssot.md)
-- [開発運用ルール](.agent/rules/development-guide.md)
+本プロジェクトの開発・運用ルールについては、Claude Code および開発者共通の規約として [CLAUDE.md](CLAUDE.md) にまとめています。
 
 ## 5. ドキュメント
 
