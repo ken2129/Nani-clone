@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nani-clone
 
-## Getting Started
+Gemini API を利用した、シンプルでセキュアなリアルタイム翻訳ツールです。
 
-First, run the development server:
+## 概要
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+このプロジェクトは、Google の Gemini API (1.5 Flash) を利用して、入力されたテキストをリアルタイムで翻訳する Web アプリケーションです。
+ユーザー自身が発行した API キーを使用する **BYOK (Bring Your Own Key)** 構成を採用しており、高いプライバシーと利便性を両立しています。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 特徴
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **リアルタイム翻訳**: 入力停止から 500ms 後に自動的に翻訳を開始します。
+- **セキュアな設計**:
+  - API キーはブラウザの `httpOnly Cookie` に保存され、JavaScript からアクセスできません。
+  - サーバー側のデータベースには一切データを保存しないため、プライバシーが守られます。
+- **モダンな UI**: Vanilla CSS による、装飾を極限まで削ぎ落とした「スマートでミニマル」なデザイン。
+- **レスポンシブ対応**: PC、タブレット、スマートフォンで快適に動作します。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 技術スタック
 
-## Learn More
+- **フロントエンド**: Next.js (App Router), React, TypeScript
+- **スタイリング**: Vanilla CSS
+- **バックエンド**: Next.js API Routes (API Proxy)
+- **AI モデル**: Google Gemini 1.5 Flash
+- **インフラ**: Vercel
 
-To learn more about Next.js, take a look at the following resources:
+## セットアップ
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. 依存関係のインストール:
+   ```bash
+   npm install
+   ```
+2. 開発サーバーの起動:
+   ```bash
+   npm run dev
+   ```
+3. [Gemini API キー](https://aistudio.google.com/app/apikey)を取得し、アプリの設定画面から入力して使用してください。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ドキュメント
 
-## Deploy on Vercel
+- [要件定義書](docs/REQUIREMENTS.md)
+- [デザイン設計書](docs/DESIGN.md)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ライセンス
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License
